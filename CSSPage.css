@@ -1,17 +1,35 @@
 h1 {
+font-size:100px;
 color:purple; 
 text-align: center; 
+border: 5px double black;
+width:400px;
+background:green;
+margin-left: auto;
+margin-right:auto;
 
 }
 nav#menu {
 	text-align:center;
 	height:50px;
-	
+
+	width:960px;
+	margin-left: auto;
+	margin-right:auto;
+
 }
 
 nav#menu ul li {
 	display:inline-block;
+	border: 5px double black;
+	background-color:blue;
 }
+
+nav#menu ul :hover {
+color:black;
+
+}
+
 
 nav#menu ul li a {
 	font-size:24px;
@@ -29,7 +47,8 @@ margin-right:auto;
 padding-top:25px;
 }
 body { 
-background-color: black;
+background:url(Pictures/Background.jpg) 0 0;
+background-repeat: repeat;
 }
 .Content h2{ 
 font-size:48px; 
@@ -178,39 +197,55 @@ margin-left: 10px;
 
 } 
 
-.Steam  { 
-width:600px;
-height:600px;
-margin-top:50px;
-margin-left:180px;
-
-} 
-.Steam a {
-display: block; 
-transition: all 1s ease-in-out 0s;
--webkit-transition: all 0.25s ease-in-out 0;
-transition: all 0.25s ease-in-out 0;
-} 
-
-.SteamSlider a { 
-width:300px;
-height:300px; 
-background:url(Pictures/SteamSlide.jpg) 0 0;
-margin-left: auto;
-margin-right:auto;
+.img-slider-wrap {
+  display: block;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  background: #222;
+  margin-left:auto;
+  margin-right:auto;
 }
-
-.SteamSlider a:hover { 
-width: 600px; 
-height:600px;
-background:url(Pictures/SteamSlide.jpg) 0 0;
-/*margin-left:330px; */
-/* margin-right:330px; */
-} 
-
-
-
-
+.img-slider-wrap [class^="img-slider"] {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  height: 300px;
+  width: 300px;
+  -webkit-transition: all 200ms ease 0s;
+          transition: all 200ms ease 0s;
+}
+.img-slider-wrap [class^="img-slider"]:hover {
+  height: 600px;
+  width: 600px;
+  z-index: 500;
+  background-position: 0 0;
+}
+.img-slider-wrap [class*="1"] {
+  background-image: url(pictures/SteamSlide.jpg);
+  top: 0;
+  left: 0;
+}
+.img-slider-wrap [class*="2"] {
+  background-image: url(pictures/Facebookpic.jpg);
+  background-position: -300px 0;
+  top: 0;
+  right: 0;
+}
+.img-slider-wrap [class*="3"] {
+  background-image: url(pictures/Instagrampic.jpg);
+  background-position: 0 -300px;
+  bottom: 0;
+  left: 0;
+}
+.img-slider-wrap [class*="4"] {
+  background-image: url(pictures/Twitterpic.jpg);
+  background-position: -300px -300px;
+  bottom: 0;
+  right: 0;
+}
 
 
 
