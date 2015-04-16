@@ -224,24 +224,24 @@ margin-left: 10px;
   background-position: 0 0;
 }
 .img-slider-wrap [class*="1"] {
-  background-image: url(pictures/SteamSlide.jpg);
+  background-image: url(Pictures/SteamSlide.jpg);
   top: 0;
   left: 0;
 }
 .img-slider-wrap [class*="2"] {
-  background-image: url(pictures/Facebookpic.jpg);
+  background-image: url(Pictures/Facebookpic.jpg);
   background-position: -300px 0;
   top: 0;
   right: 0;
 }
 .img-slider-wrap [class*="3"] {
-  background-image: url(pictures/Instagrampic.jpg);
+  background-image: url(Pictures/Instagrampic.jpg);
   background-position: 0 -300px;
   bottom: 0;
   left: 0;
 }
 .img-slider-wrap [class*="4"] {
-  background-image: url(pictures/Twitterpic.jpg);
+  background-image: url(Pictures/Twitterpic.jpg);
   background-position: -300px -300px;
   bottom: 0;
   right: 0;
