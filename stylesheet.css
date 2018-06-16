@@ -1,0 +1,160 @@
+
+#MenuBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00134d;
+}
+
+#MenuBar li {
+    float: left;
+}
+
+#MenuBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#MenuBar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#MenuBar .active {
+    background-color: #813772;
+}
+
+#TheStick {
+    width:100%;
+    height:auto;
+}
+
+#Cabin {
+    width:100%;
+    max-height:auto;
+    overflow:hidden;
+    padding:0;
+}
+
+#TitleBar {
+    overflow:auto;
+}
+
+.HomeTitleBar {
+   position: relative;
+   
+}
+#indexTitle {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    color:white;
+    font-size: 5em;
+    text-shadow:-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;e;
+    margin:auto;
+}
+
+#MainContent {
+    overflow:hidden;
+    margin-bottom: 3em;
+}
+#MainContent h2 {
+    font-size:2.5em;
+    margin:0px 0px 10px;
+}
+
+#CenterP {
+    width:80%;
+    min-height:20em;
+    margin:auto;
+    background-color:#d194c5;
+    display:table;
+}
+
+#CenterP p {
+    text-align:center;
+    vertical-align:middle;
+    display:table-cell;
+    font-size: 2em;
+}
+
+#Footer {
+    background-color:#00134d;
+    margin:auto;
+    
+}
+
+#FooterContent li a {
+    color: white;
+    text-decoration: none;
+    
+}
+#FooterContent ul {
+    overflow: hidden;
+    background-color: #00134d;
+    margin:0;
+      text-align:center;
+}
+
+#FooterContent li {
+    display:inline-block;
+    text-align:center;
+    padding: 10px;
+}
+
+.Collapse {
+    background-color: #d194c5;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border-style: solid;
+    border-width:1px;
+    border-color:black;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .Collapse:hover {
+    background-color: #813772;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+#content {
+    width:80%;
+    margin:auto;
+    text-align:left;
+    color: white;
+    overflow: hidden;
+    background-color: #d194c5;
+    max-height:0;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+}
+#content p {
+    width:90%;
+    margin:auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.Collapse:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.Collapse.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+#ShowandHide {
+    text-align:center;
+}
