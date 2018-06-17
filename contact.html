@@ -1,22 +1,3 @@
-<?php
-    if(isset($_POST['submit'])){
-        $to = "fatboy3111@gmail.com"; // this is your Email address
-        $from = $_POST['email']; // this is the sender's Email address
-        $first_name = $_POST['first_name'];
-        $last_name = $_POST['last_name'];
-        $subject = "Form submission";
-        $subject2 = "Copy of your form submission";
-        $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-        $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-        
-        $headers = "From:" . $from;
-        $headers2 = "From:" . $to;
-        mail($to,$subject,$message,$headers);
-        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-        echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-        // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
 
 <!DOCTYPE html>
 <html>
@@ -30,30 +11,32 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutMe.html">About Me</a></li>
-                <li><a href="experence.html">Experence</a></li>
                 <li><a href="funStuff.html">Fun Stuff</a></li>
                 <li><a href="contact.html" class="active">Contact Page</a></li>
                 </ui>
                 </div>
         <div id="TitleBar">
-            <h1>Contact Me</h1>
+            <h1 id="ContactTitle">Contact Me</h1>
         </div>
-        <div id="MainContent">
-            <div class="container">
-                <form action="" method="post">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                   <label for="lname">Last Name</label>
-                   <input type="text" name="email" placeholder="Your email..">
-                  <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    <input type="submit" name="submit" value="Submit">
-                </form>
-            </div>
-            
+        
+         <div class="ContactPage">
+
+              <div id="ContactPar">
+                  <p>Hello! Glad to see that you may want to contact me. Feel free to fill out the form here. </p>
+              </div>
+              
+          <form id="ContactForm" method="POST" action="https://formspree.io/Richardcarpenter25@yahoo.com">
+                <label for="WholeName">Name</label>
+                <input type="name" id="WholeName" name="name" placeholder="Your name.."><br>
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="email" placeholder="Your email.."><br>
+                        <label for="Message">Message</label>
+                        <textarea name="message" id="Message" placeholder="Your message.."></textarea>
+                        <input type="submit" value="Submit">
+
+            </form>
+        
+          
         </div>
         <div id="Footer">
         </div>
