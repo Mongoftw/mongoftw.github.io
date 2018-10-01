@@ -3564,9 +3564,10 @@ input, select, textarea {
 					min-height: 50vh;
 				}
 
-				.banner.style1.fullscreen .image {
-					height: 50vh;
-				}
+                .banner.style1.fullscreen .image {
+                    height: 70vh;
+                    object-position: 0% 50%;
+                }
 
 			}
 
@@ -3605,17 +3606,17 @@ input, select, textarea {
 			}
 
 		.banner.style1.image-position-left .image img {
-			-moz-object-position: left;
-			-webkit-object-position: left;
-			-ms-object-position: left;
-			object-position: left;
+			-moz-object-position: top;
+			-webkit-object-position: top;
+			-ms-object-position: top;
+			object-position: top;
 		}
 
 		.banner.style1.image-position-right .image img {
-			-moz-object-position: right;
-			-webkit-object-position: right;
-			-ms-object-position: right;
-			object-position: right;
+			-moz-object-position: top;
+			-webkit-object-position: top;
+			-ms-object-position: top;
+			object-position: top;
 		}
 
 /* Banner (style2) */
@@ -4938,6 +4939,9 @@ input, select, textarea {
 			flex-direction: column-reverse;
 			text-align: center !important;
 		}
+        table {
+            text-align: left !important;
+        }
 
 			.spotlight.style1 .content {
 				width: 100%;
